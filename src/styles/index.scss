@@ -1,7 +1,28 @@
 @import "fonts";
 @import "variables";
-
+@import "mixins";
+@import "breakpoints";
+@import "components/header";
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 28px;
+
+  &__header {
+    margin-top: 60px;
+    @include laptop {
+      margin-top: 50px;
+    }
+    @include tablet {
+      margin-top: 40px;
+    }
+    @include mobile {
+      margin-top: 32px;
+    }
+  }
 }

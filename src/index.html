@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webpack Test</title>
-  </head>
-  <body>
-    <h1>Hello !</h1>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FeexIt</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header wrapper__header">
+      <img src="./assets/images/logo.png" alt="" class="header__logo">
+      <nav class="header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#about" class="navigation__item--link">About Us</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__item--link">Our Solutions</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__item--link">Our Documentation</a></li>
+        </ul>
+      </nav>
+      <div class="header__controls controls">
+        <button type="button" class="controls__login"><span class="controls__login--text">Log
+            In</span>
+          <img class="controls__login--icon" src="./assets/svg/login.svg" alt=""></button>
+        <button type="button" class="controls__contact"><span class="controls__contact--text">Contact US</span>
+          <img class="controls__contact--icon" src="./assets/svg/contact.svg" alt=""></button>
+      </div>
+    </header>
+  </div>
+</body>
+
 </html>
