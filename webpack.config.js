@@ -66,9 +66,6 @@ const setupPlugins = () => {
   let defaultPlugins = [
     new HtmlWebpackPlugin({
       template: "./index.html",
-      minify: {
-        collapseWhitespace: isProduction,
-      },
     }),
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
@@ -83,26 +80,6 @@ const setupPlugins = () => {
       filename: "index.css",
     }),
   ];
-
-  if (isProduction) {
-    defaultPlugins = [
-      ...defaultPlugins,
-      new CriticalCssWebpackPlugin({
-        base: path.resolve(__dirname, "dist"),
-        src: "index.html",
-        target: "index.css",
-        inline: true,
-        minify: true,
-        extract: true,
-        width: 768,
-        height: 627,
-        concurrency: 4,
-        penthouse: {
-          blockJSRequests: false,
-        },
-      }),
-    ];
-  }
 
   return defaultPlugins;
 };
