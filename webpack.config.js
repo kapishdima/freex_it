@@ -16,7 +16,6 @@ const isProduction = !isDevelopment;
 const setupDevServer = () => {
   if (isDevelopment) {
     return {
-      contentBase: path.resolve(__dirname, "dist"),
       port: process.env.DEV_SERVER_PORT || 3000,
       compress: true,
       open: true,
@@ -115,6 +114,7 @@ module.exports = {
     path: path.resolve(__dirname, "dist"),
     filename: isDevelopment ? "index.[contenthash].js" : "index.js",
   },
+  mode: process.env.NODE_MODE,
   optimization: setupOptimization(),
   devServer: setupDevServer(),
   module: {
