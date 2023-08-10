@@ -61,9 +61,9 @@
   cursor: pointer;
 
   @include laptop() {
-    font-size: $font-size * 0.8; // Уменьшаем размер шрифта для брейкпоинта "laptop"
+    font-size: $font-size * 0.8;
   }
   @include tablet() {
-    font-size: $font-size * 0.7; // Уменьшаем размер шрифта для брейкпоинта "laptop"
+    font-size: $font-size * 0.7;
   }
 }
