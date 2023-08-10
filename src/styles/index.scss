@@ -5,6 +5,7 @@
 @import "typography";
 @import "components/header";
 @import "components/footer";
+@import "components/choose-section";
 
 * {
   padding: 0;
@@ -14,10 +15,30 @@
 body {
   font-family: $main-ff;
 }
-.wrapper {
+.main {
+  &__choose-section {
+    margin: 144px 0px 160px;
+    @include laptop {
+      margin: 96px 0px 120px;
+    }
+    @include tablet {
+      margin: 64px 0px 80px;
+    }
+    @include mobile {
+      margin: 32px 0px 40px;
+    }
+  }
+}
+.layout {
   max-width: $container-max-width;
   margin: 0 auto;
   padding: 0 28px;
+  @include laptop {
+    padding: 0 24px;
+  }
+  @include tablet {
+    padding: 0 18px;
+  }
 
   &__header {
     margin-top: 60px;

@@ -1,0 +1,15 @@
+.choose-section {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  @include laptop {
+    gap: 40px;
+  }
+  @include tablet {
+    gap: 32px;
+  }
+
+  &__paragraph {
+    text-align: center;
+  }
+}
