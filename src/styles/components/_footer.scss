@@ -1,0 +1,46 @@
+.footer {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 28px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  @include mobile {
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__logo {
+    display: flex;
+    max-width: 280px;
+    @include laptop {
+      max-width: 200px;
+    }
+    @include tablet {
+      max-width: 120px;
+    }
+  }
+}
+.navigation-footer {
+  max-width: 765px;
+  width: 100%;
+  @include mobile {
+  }
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__item {
+    &--link {
+      @include nav-item-desktop;
+    }
+  }
+}

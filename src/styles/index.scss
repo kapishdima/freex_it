@@ -1,7 +1,52 @@
 @import "fonts";
 @import "variables";
+@import "mixins";
+@import "breakpoints";
+@import "components/header";
+@import "components/footer";
 
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: $main-ff;
+}
+.wrapper {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 28px;
+
+  &__header {
+    margin-top: 60px;
+    @include laptop {
+      margin-top: 50px;
+    }
+    @include tablet {
+      margin-top: 40px;
+    }
+    @include mobile {
+      margin-top: 32px;
+    }
+  }
+
+  &__footer {
+    min-height: 236px;
+    max-height: 269px;
+    background-color: $color-blue;
+    padding-top: 70px;
+
+    @include laptop {
+      min-height: 150px;
+      padding-top: 45px;
+    }
+    @include tablet {
+      min-height: 100px;
+      padding-top: 25px;
+    }
+    @include mobile {
+      min-height: 236px;
+    }
+  }
 }

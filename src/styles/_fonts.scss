@@ -1,13 +1,2 @@
-@font-face {
-  font-family: "Roboto Bold";
-  font-display: swap;
-  src: url("../assets/fonts/Roboto/Roboto-Bold.ttf") format("truetype");
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "Roboto Regular";
-  font-display: swap;
-  src: url("../assets/fonts/Roboto/Roboto-Regular.ttf") format("truetype");
-  font-weight: normal;
-}
+@import url(https://fonts.googleapis.com/css?family=Syne:regular,500,600,700,800);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
