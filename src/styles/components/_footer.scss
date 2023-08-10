@@ -1,10 +1,17 @@
-.header {
+.footer {
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 28px;
+
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-
+  @include mobile {
+    flex-direction: column;
+    gap: 20px;
+  }
   &__logo {
     display: flex;
     max-width: 280px;
@@ -16,16 +23,20 @@
     }
   }
 }
-.navigation {
+.navigation-footer {
   max-width: 765px;
   width: 100%;
   @include mobile {
-    display: none;
   }
   &__list {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    @include mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__item {
     &--link {
@@ -116,72 +127,6 @@
       display: none;
       @include mobile {
         display: block;
-      }
-    }
-  }
-}
-
-.burger-menu {
-  display: none;
-  @include mobile {
-    flex: 1 1 auto;
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-
-.burger-icon {
-  display: flex;
-  width: 30px;
-  height: 24px;
-  cursor: pointer;
-  position: relative;
-
-  img {
-    width: 100%;
-    height: 100%;
-  }
-}
-
-.burger-nav {
-  position: absolute;
-  top: 0px;
-  left: 0;
-  width: 100%;
-  height: 150px;
-  background-color: $color-white;
-  transform: translateY(-100%);
-  transition: transform 0.3s ease-in-out;
-  box-shadow: 0px 12px 42px -4px rgba(24, 39, 75, 0.12), 0px 8px 18px -6px rgba(24, 39, 75, 0.12);
-
-  &.active {
-    transform: translateY(0);
-  }
-
-  ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 12px;
-    height: 100%;
-
-    li {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      padding-bottom: 5px;
-      &:hover {
-        border-bottom: 1px solid $color-purple;
-      }
-      a {
-        text-decoration: none;
-        color: $color-black;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%;
-        transition: color 0.2s ease-in-out;
       }
     }
   }
