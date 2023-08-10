@@ -1,0 +1,10 @@
+.title {
+  @include title;
+  text-align: center;
+}
+.subtitle {
+  @include title;
+}
+.paragraph {
+  @include paragraph;
+}

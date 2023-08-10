@@ -40,7 +40,7 @@
   }
   &__item {
     &--link {
-      @include nav-item-desktop;
+      @include nav-item;
     }
   }
 }

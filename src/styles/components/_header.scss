@@ -31,7 +31,7 @@
   }
   &__item {
     &--link {
-      @include nav-item-desktop;
+      @include nav-item;
     }
   }
 }
@@ -69,7 +69,7 @@
       }
     }
 
-    @include header-controls-desktop;
+    @include controls;
 
     @include laptop {
       max-width: 200px;
@@ -103,7 +103,7 @@
   //   padding: 10px;
 
   //   background: transparent;
-  //   @include header-controls-desktop;
+  //   @include controls;
   //   @include laptop {
   //     max-width: 100px;
   //     height: 50px;

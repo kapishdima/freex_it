@@ -1,4 +1,4 @@
-@mixin title-desktop {
+@mixin title {
   color: $color-black;
   font-family: $side-ff;
   font-size: 48px;
@@ -9,7 +9,7 @@
     font-size: 22px;
   }
 }
-@mixin paragraph-desktop {
+@mixin paragraph {
   color: $color-black;
   font-family: $main-ff;
   font-size: 24px;
@@ -22,7 +22,7 @@
   }
 }
 
-@mixin nav-item-desktop($font-size: 20px) {
+@mixin nav-item($font-size: 20px) {
   text-decoration: none;
   color: $color-black;
   font-family: $main-ff;
@@ -44,7 +44,7 @@
   }
 }
 
-@mixin header-controls-desktop($font-size: 20px) {
+@mixin controls($font-size: 20px) {
   display: flex;
   justify-content: center;
   align-items: center;
