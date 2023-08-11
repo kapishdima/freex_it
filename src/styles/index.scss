@@ -7,6 +7,7 @@
 @import "components/footer";
 @import "components/about-section";
 @import "components/choose-section";
+@import "components/vision-section";
 
 * {
   padding: 0;
@@ -18,32 +19,7 @@
 body {
   font-family: $main-ff;
 }
-.main {
-  &__choose-section {
-    margin: 144px 0px 160px;
-    @include laptop {
-      margin: 96px 0px 120px;
-    }
-    @include tablet {
-      margin: 64px 0px 80px;
-    }
-    @include mobile {
-      margin: 32px 0px 40px;
-    }
-  }
-  &__about-section {
-    margin: 110px 0px 150px;
-    @include laptop {
-      margin: 100px 0px 130px;
-    }
-    @include tablet {
-      margin: 50px 0px 80px;
-    }
-    @include mobile {
-      margin: 38px 0px 60px;
-    }
-  }
-}
+
 .layout {
   max-width: $container-max-width;
   margin: 0 auto;
@@ -84,6 +60,50 @@ body {
     }
     @include mobile {
       min-height: 236px;
+    }
+  }
+}
+.main {
+  &__choose-section {
+    margin: 144px 0px 160px;
+    @include laptop {
+      margin: 96px 0px 120px;
+    }
+    @include tablet {
+      margin: 64px 0px 80px;
+    }
+    @include mobile {
+      margin: 32px 0px 40px;
+    }
+  }
+  &__about-section {
+    margin: 110px 0px 150px;
+    @include laptop {
+      margin: 100px 0px 130px;
+    }
+    @include tablet {
+      margin: 50px 0px 80px;
+    }
+    @include mobile {
+      margin: 38px 0px 60px;
+    }
+  }
+  &__vision-section {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    margin: 100px 0px 0px;
+    @include laptop {
+      margin: 80px 0px 0px;
+      gap: 70px;
+    }
+    @include tablet {
+      margin: 42px 0px 0px;
+      gap: 40px;
+    }
+    @include mobile {
+      margin: 32px 0px 0px;
+      gap: 32px;
     }
   }
 }
