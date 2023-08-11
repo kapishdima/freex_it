@@ -5,6 +5,7 @@
 @import "typography";
 @import "components/header";
 @import "components/footer";
+@import "components/about-section";
 @import "components/choose-section";
 
 * {
@@ -26,6 +27,18 @@ body {
     }
     @include mobile {
       margin: 32px 0px 40px;
+    }
+  }
+  &__about-section {
+    margin: 110px 0px 150px;
+    @include laptop {
+      margin: 100px 0px 130px;
+    }
+    @include tablet {
+      margin: 50px 0px 80px;
+    }
+    @include mobile {
+      margin: 38px 0px 60px;
     }
   }
 }
