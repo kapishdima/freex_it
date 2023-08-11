@@ -8,6 +8,7 @@
 @import "components/about-section";
 @import "components/choose-section";
 @import "components/vision-section";
+@import "components/info-section";
 @import "components/statistics-section";
 
 * {
@@ -106,6 +107,26 @@ body {
     @include mobile {
       margin: 32px 0px 0px;
       gap: 32px;
+    }
+  }
+  &__info-section {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+
+    margin: 150px 0 100px;
+
+    @include laptop {
+      gap: 100px;
+      margin: 140px 0px 90px;
+    }
+    @include tablet {
+      gap: 80px;
+      margin: 100px 0px 80px;
+    }
+    @include mobile {
+      gap: 60px;
+      margin: 60px 0px 60px;
     }
   }
 }
