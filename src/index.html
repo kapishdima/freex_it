@@ -1,275 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FeexIt</title>
+    <meta
+      name="description"
+      content="Feex is a global leading payments and risk management company focused on providing the most advanced payment technology, ensuring merchants can access multiple payment solutions across regions for worldwide consumer convenience."
+    />
+    <meta
+      name="keywords"
+      content="Feex, global payments, risk management, payment technology, merchants, payment solutions, worldwide transactions"
+    />
+    <meta
+      property="og:title"
+      content="Global Payments & Risk Management Solutions | Feex"
+    />
+    <meta
+      property="og:description"
+      content="Discover advanced payment technology and risk management solutions with Feex, enabling merchants worldwide to access diverse payment options across regions for seamless global transactions."
+    />
+    <meta property="og:image" content="./assets/images/about.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./assets/images/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FeexIt</title>
-  <meta name="description"
-    content="Feex is a global leading payments and risk management company focused on providing the most advanced payment technology, ensuring merchants can access multiple payment solutions across regions for worldwide consumer convenience.">
-  <meta name="keywords"
-    content="Feex, global payments, risk management, payment technology, merchants, payment solutions, worldwide transactions">
-  <meta property="og:title" content="Global Payments & Risk Management Solutions | Feex">
-  <meta property="og:description"
-    content="Discover advanced payment technology and risk management solutions with Feex, enabling merchants worldwide to access diverse payment options across regions for seamless global transactions.">
-  <meta property="og:image" content="./assets/images/about.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
-  <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-</head>
+  <body>
+    <div class="layout">
+      <header class="header layout__header">
+        <img src="./assets/images/logo.png" alt="FeexIt" class="header__logo" />
+        <!-- <div class="burger-menu">
+          <div class="burger-icon">
+            <img src="./assets/svg/burger.svg" alt="Burger Menu Icon" />
+          </div>
 
-<body>
-  <div class="layout">
-    <header class="header layout__header">
-      <img src="./assets/images/logo.png" alt="FeexIt" class="header__logo">
-      <div class="burger-menu">
-        <div class="burger-icon">
-          <img src="./assets/svg/burger.svg" alt="Burger Menu Icon">
-        </div>
-
-        <nav class="burger-nav">
-          <ul class="burger-list">
-            <li class="burger-item"><a href="#about" class="burger-link">About Us</a></li>
-            <!-- <li class="burger-item"><a href="#" class="burger-link">Our Solutions</a></li>
-            <li class="burger-item"><a href="#" class="burger-link">Our Documentation</a></li> -->
+          <nav class="burger-nav">
+            <ul class="burger-list">
+               <li class="burger-item"><a href="#about" class="burger-link">About Us</a></li>
+              <li class="burger-item"><a href="#" class="burger-link">Our Solutions</a></li>
+            <li class="burger-item"><a href="#" class="burger-link">Our Documentation</a></li>
+            </ul>
+          </nav>
+        </div> -->
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list">
+            <!-- <li class="navigation__item"><a href="#about" class="navigation__item--link">About Us</a></li> -->
+            <!-- <li class="navigation__item"><a href="#" class="navigation__item--link">Our Solutions</a></li>
+          <li class="navigation__item"><a href="#" class="navigation__item--link">Our Documentation</a></li> -->
           </ul>
         </nav>
-      </div>
-      <nav class="header__navigation navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item"><a href="#about" class="navigation__item--link">About Us</a></li>
-          <!-- <li class="navigation__item"><a href="#" class="navigation__item--link">Our Solutions</a></li>
-          <li class="navigation__item"><a href="#" class="navigation__item--link">Our Documentation</a></li> -->
-        </ul>
-      </nav>
-      <div class="header__controls controls">
-        <!-- <button type="button" class="controls__login"><span class="controls__login--text">Log
+        <div class="header__controls controls">
+          <!-- <button type="button" class="controls__login"><span class="controls__login--text">Log
             In</span>
           <img class="controls__login--icon" src="./assets/svg/login.svg" alt="login icon"></button> -->
-        <button type="button" id="contactButton" class="controls__contact"><span class="controls__contact--text">Contact
-            US</span>
-          <img class="controls__contact--icon" src="./assets/svg/contact.svg" alt="contact us"></button>
-      </div>
-    </header>
-    <main class="layout__main main">
-      <section id="about" class="main__about-section about-section">
-        <div class="about-section__text-block">
-          <h1 class="subtitle">About Us</h1>
-          <p class="paragraph">Feex is a global leading payments and risk management company focused on providing the
-            most advanced payment technology, to ensure merchants can access multiple payment solutions over multiple
-            regions so consumers can make payment anywhere in the world.</p>
+          <button type="button" id="contactButton" class="controls__contact">
+            <span class="controls__contact--text">Contact US</span>
+            <img
+              class="controls__contact--icon"
+              src="./assets/svg/contact.svg"
+              alt="contact us"
+            />
+          </button>
         </div>
-        <div class="about-section__image-block">
-          <img src="./assets/images/about.png" alt="about us image" class="about-section__image-block--image">
-          <img src="./assets/images/about-mobile.png" alt="about us image"
-            class="about-section__image-block--image-mobile">
-        </div>
-      </section>
-      <section class="main__statistics-section statistics-section">
-        <h2 class="title statistics-section__title">Gateway Statistics:</h2>
-        <div class="statistic-block">
-          <div class="statistic-block__item">
-            <img src="./assets/svg/money-bag.svg" alt="money-bag icon" class="statistic-block__item--img">
-            <p class="statistic-block__item--text">£2 Billion <br>
-              Processed Volume</p>
-          </div>
-          <div class="statistic-block__item statistic-block__item-alternate">
-            <img src="./assets/svg/wallet.svg" alt="wallet" class="statistic-block__item--img">
-            <p class="statistic-block__item--text statistic-block__item-alternate--text ">150+
-              <br>
-              Payment Solutions
+      </header>
+      <main class="layout__main main">
+        <section id="about" class="main__about-section about-section">
+          <div class="about-section__text-block">
+            <h1 class="subtitle">About Us</h1>
+            <p class="paragraph">
+              Feex is a global leading payments and risk management company
+              focused on providing the most advanced payment technology, to
+              ensure merchants can access multiple payment solutions over
+              multiple regions so consumers can make payment anywhere in the
+              world.
             </p>
           </div>
-          <div class="statistic-block__item">
-            <img src="./assets/svg/time.svg" alt="time icon" class="statistic-block__item--img">
-            <p class="statistic-block__item--text">1,000 <br>
-              Transactions per Second</p>
+          <div class="about-section__image-block">
+            <img
+              src="./assets/images/about.png"
+              alt="about us image"
+              class="about-section__image-block--image"
+            />
+            <img
+              src="./assets/images/about-mobile.png"
+              alt="about us image"
+              class="about-section__image-block--image-mobile"
+            />
           </div>
-          <div class="statistic-block__item statistic-block__item-alternate-mobile">
-            <img src="./assets/svg/boost.svg" alt="boost icon" class="statistic-block__item--img">
-            <p class="statistic-block__item--text statistic-block__item-alternate-mobile--text">99.99% <br>
-              Up Time</p>
+        </section>
+        <section class="main__statistics-section statistics-section">
+          <h2 class="title statistics-section__title">Gateway Statistics:</h2>
+          <div class="statistic-block">
+            <div class="statistic-block__item">
+              <img
+                src="./assets/svg/money-bag.svg"
+                alt="money-bag icon"
+                class="statistic-block__item--img"
+              />
+              <p class="statistic-block__item--text">
+                £2 Billion <br />
+                Processed Volume
+              </p>
+            </div>
+            <div class="statistic-block__item statistic-block__item-alternate">
+              <img
+                src="./assets/svg/wallet.svg"
+                alt="wallet"
+                class="statistic-block__item--img"
+              />
+              <p
+                class="statistic-block__item--text statistic-block__item-alternate--text"
+              >
+                150+
+                <br />
+                Payment Solutions
+              </p>
+            </div>
+            <div class="statistic-block__item">
+              <img
+                src="./assets/svg/time.svg"
+                alt="time icon"
+                class="statistic-block__item--img"
+              />
+              <p class="statistic-block__item--text">
+                1,000 <br />
+                Transactions per Second
+              </p>
+            </div>
+            <div
+              class="statistic-block__item statistic-block__item-alternate-mobile"
+            >
+              <img
+                src="./assets/svg/boost.svg"
+                alt="boost icon"
+                class="statistic-block__item--img"
+              />
+              <p
+                class="statistic-block__item--text statistic-block__item-alternate-mobile--text"
+              >
+                99.99% <br />
+                Up Time
+              </p>
+            </div>
+            <div class="statistic-block__item">
+              <img
+                src="./assets/svg/calendar.svg"
+                alt="calendar icon"
+                class="statistic-block__item--img"
+              />
+              <p class="statistic-block__item--text">
+                2023 <br />
+                Established
+              </p>
+            </div>
           </div>
-          <div class="statistic-block__item">
-            <img src="./assets/svg/calendar.svg" alt="calendar icon" class="statistic-block__item--img">
-            <p class="statistic-block__item--text">2023 <br>
-              Established</p>
+        </section>
+        <section class="main__info-section">
+          <div class="info-section">
+            <div class="info-section__text-block">
+              <h3 class="subtitle info-section__subtitle">
+                Leading Technology Solutions
+              </h3>
+              <p class="paragraph">
+                Feex specializes in the gambling and managed risk sectors,
+                utilizing leading technology to seamlessly connect operators to
+                global payment solutions. Our expertise in managing payment risk
+                allows us to develop cutting-edge solutions, simplifying the
+                payment process. Beyond that, our core mission revolves around
+                connecting people, enabling buyers and sellers to interact
+                effortlessly on a global scale
+              </p>
+            </div>
+            <div class="info-section__image-block">
+              <img
+                src="./assets/images/tech.png"
+                alt="tech image"
+                class="info-section__image-block--image"
+              />
+              <img
+                src="./assets/images/tech-mobile.png"
+                alt="tech image"
+                class="info-section__image-block--image-mobile"
+              />
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="main__info-section">
-        <div class="info-section">
-          <div class="info-section__text-block">
-            <h3 class="subtitle info-section__subtitle">Leading Technology Solutions</h3>
-            <p class="paragraph">Feex specializes in the gambling and managed risk sectors, utilizing leading technology
-              to seamlessly connect operators to global payment solutions. Our expertise in managing payment risk allows
-              us to develop cutting-edge solutions, simplifying the payment process. Beyond that, our core mission
-              revolves around connecting people, enabling buyers and sellers to interact effortlessly on a global scale
-            </p>
+          <div class="info-section">
+            <div class="info-section__text-block">
+              <h3 class="subtitle">The FeeX Platform</h3>
+              <p class="paragraph">
+                The platform originated from a team of skilled payment software
+                professionals boasting more than 5 years of expertise. Back in
+                2013, our platform was established with a specific focus on the
+                managed risk sector, establishing connections with numerous
+                European banks.
+              </p>
+            </div>
+            <div class="info-section__image-block">
+              <img
+                src="./assets/images/platform.png"
+                alt="platform image"
+                class="info-section__image-block--image"
+              />
+              <img
+                src="./assets/images/platform-mobile.png"
+                alt="platform image"
+                class="info-section__image-block--image-mobile"
+              />
+            </div>
           </div>
-          <div class="info-section__image-block">
-            <img src="./assets/images/tech.png" alt="tech image" class="info-section__image-block--image">
-            <img src="./assets/images/tech-mobile.png" alt="tech image" class="info-section__image-block--image-mobile">
+          <div class="info-section">
+            <div class="info-section__text-block">
+              <p class="paragraph">
+                Our platform's strength lies not only in its well-established
+                connections but also in the rich functionality and features it
+                offers. These elements significantly enhance the value of your
+                payment processing experience. At Feex, we are dedicated to
+                continuously improving and expanding our services to provide
+                top-notch payment processing solutions to our valued clients.
+              </p>
+            </div>
+            <div class="info-section__image-block">
+              <img
+                src="./assets/images/platform2.png"
+                alt="platform image"
+                class="info-section__image-block--image"
+              />
+              <img
+                src="./assets/images/platform2-mobile.png"
+                alt="platform image"
+                class="info-section__image-block--image-mobile"
+              />
+            </div>
           </div>
-        </div>
-        <div class="info-section">
-          <div class="info-section__text-block">
-            <h3 class="subtitle">The FeeX Platform</h3>
-            <p class="paragraph">The platform originated from a team of skilled payment software professionals boasting
-              more than 5 years of expertise. Back in 2013, our platform was established with a specific focus on the
-              managed risk sector, establishing connections with numerous European banks.
-            </p>
-          </div>
-          <div class="info-section__image-block">
-            <img src="./assets/images/platform.png" alt="platform image" class="info-section__image-block--image">
-            <img src="./assets/images/platform-mobile.png" alt="platform image"
-              class="info-section__image-block--image-mobile">
-          </div>
-        </div>
-        <div class="info-section">
-          <div class="info-section__text-block">
-            <p class="paragraph">Our platform's strength lies not only in its well-established connections but also in
-              the rich functionality and features it offers. These elements significantly enhance the value of your
-              payment processing experience. At Feex, we are dedicated to continuously improving and expanding our
-              services to provide top-notch payment processing solutions to our valued clients.
-            </p>
-          </div>
-          <div class="info-section__image-block">
-            <img src="./assets/images/platform2.png" alt="platform image" class="info-section__image-block--image">
-            <img src="./assets/images/platform2-mobile.png" alt="platform image"
-              class="info-section__image-block--image-mobile">
-          </div>
-        </div>
-      </section>
-      <section class="main__benefits-section">
-        <h2 class="title  benefits-section-title">FeeX Benefits</h2>
-        <p class="paragraph benefits-section-paragraph">FeeX offers valuable benefits to simplify your payment
-          ecosystem.
-          With just one connection, <span class="benefits-section-paragraph--highlited">
-            you can efficiently serve your existing footprint and easily accommodate new
-            customers and markets
-          </span> whenever you're ready.
-          We provide a dedicated relationship manager <span class="benefits-section-paragraph--highlited">to support
-            your business growth</span>, offering expert analysis and
-          insights to help you achieve your payment ambitions.
-          Our experienced onboarding team <span class="benefits-section-paragraph--highlited">
-            takes care of multiple applications, alleviating expansion headaches and
-            administrative burdens
-          </span>, so you can focus on your success.</p>
+        </section>
+        <section class="main__benefits-section">
+          <h2 class="title benefits-section-title">FeeX Benefits</h2>
+          <p class="paragraph benefits-section-paragraph">
+            FeeX offers valuable benefits to simplify your payment ecosystem.
+            With just one connection,
+            <span class="benefits-section-paragraph--highlited">
+              you can efficiently serve your existing footprint and easily
+              accommodate new customers and markets
+            </span>
+            whenever you're ready. We provide a dedicated relationship manager
+            <span class="benefits-section-paragraph--highlited"
+              >to support your business growth</span
+            >, offering expert analysis and insights to help you achieve your
+            payment ambitions. Our experienced onboarding team
+            <span class="benefits-section-paragraph--highlited">
+              takes care of multiple applications, alleviating expansion
+              headaches and administrative burdens </span
+            >, so you can focus on your success.
+          </p>
 
-        <h2 class="title  benefits-section-title">Our Values</h2>
-        <div class="benefits-section">
-          <div class="benefits-section__item">
-            <img class="benefits-section__item--img" src="./assets/svg/values1.svg" alt="first item icon">
-            <span class="benefits-section__item--text"><b>Work beyond the normal</b> - We foster innovation and
-              creativity to
-              develop brilliant solutions that yield amazing results.</span>
+          <h2 class="title benefits-section-title">Our Values</h2>
+          <div class="benefits-section">
+            <div class="benefits-section__item">
+              <img
+                class="benefits-section__item--img"
+                src="./assets/svg/values1.svg"
+                alt="first item icon"
+              />
+              <span class="benefits-section__item--text"
+                ><b>Work beyond the normal</b> - We foster innovation and
+                creativity to develop brilliant solutions that yield amazing
+                results.</span
+              >
+            </div>
+            <div class="benefits-section__item">
+              <img
+                class="benefits-section__item--img"
+                src="./assets/svg/values2.svg"
+                alt="second item icon"
+              />
+              <span class="benefits-section__item--text"
+                ><b>Be the expert</b> - We deeply understand the sectors we
+                serve, building unrivaled processes, services, and creative
+                solutions that prioritize our customers' best interests.</span
+              >
+            </div>
+            <div class="benefits-section__item">
+              <img
+                class="benefits-section__item--img"
+                src="./assets/svg/values3.svg"
+                alt="third item icon"
+              />
+              <span class="benefits-section__item--text"
+                ><b>Our passion</b> - We have a genuine passion for what we do,
+                dedicating ourselves to payments and wholeheartedly committing
+                to our customers and employees.</span
+              >
+            </div>
+            <div class="benefits-section__item">
+              <img
+                class="benefits-section__item--img"
+                src="./assets/svg/values4.svg"
+                alt="fourth item icon"
+              />
+              <span class="benefits-section__item--text"
+                ><b>Integrity</b> - We take ownership of our actions and
+                maintain transparency with our customers and colleagues,
+                ensuring lasting, profitable, and trustworthy
+                partnerships.</span
+              >
+            </div>
           </div>
-          <div class="benefits-section__item">
-            <img class="benefits-section__item--img" src="./assets/svg/values2.svg" alt="second item icon">
-            <span class="benefits-section__item--text"><b>Be the expert</b> - We deeply understand the sectors we serve,
-              building unrivaled processes, services, and creative solutions that prioritize our customers' best
-              interests.</span>
+        </section>
+        <section class="main__vision-section">
+          <h2 class="title">Our Vision</h2>
+          <div class="vision-section">
+            <div class="vision-section__text-block">
+              <p class="paragraph">
+                Our Vision at FeeX is to lead and support global gambling and
+                managed risk operators by providing efficient solutions and
+                functionality for their day-to-day operations, enabling them to
+                maximize growth potential. We offer a specialized payments
+                platform tailored to the gambling sector, encompassing all
+                channels and connecting to a global network of local payment
+                solutions specific to each market.
+              </p>
+            </div>
+            <div class="vision-section__image-block">
+              <img
+                src="./assets/images/vision.png"
+                alt="vision image"
+                class="vision-section__image-block--image"
+              />
+              <img
+                src="./assets/images/vision2-mobile.png"
+                alt="vision image"
+                class="vision-section__image-block--image-mobile"
+              />
+            </div>
           </div>
-          <div class="benefits-section__item">
-            <img class="benefits-section__item--img" src="./assets/svg/values3.svg" alt="third item icon">
-            <span class="benefits-section__item--text"><b>Our passion</b> - We have a genuine passion for what we do,
-              dedicating ourselves to payments and wholeheartedly committing to our customers and employees.</span>
+          <div class="vision-section">
+            <div class="vision-section__text-block">
+              <p class="paragraph">
+                With Feex, operators gain the capability to integrate new
+                customer payment methods and third-party service providers
+                seamlessly. Our platform allows defining and implementing rules
+                and workflows for efficient utilization, setting up real-time
+                customer communications, and monitoring the entire system to
+                ensure optimal performance. Rest assured, we maintain full
+                compliance with PCI DSS Level 1 (soon).
+              </p>
+            </div>
+            <div class="vision-section__image-block">
+              <img
+                src="./assets/images/vision2.png"
+                alt="vision image"
+                class="vision-section__image-block--image"
+              />
+            </div>
           </div>
-          <div class="benefits-section__item">
-            <img class="benefits-section__item--img" src="./assets/svg/values4.svg" alt="fourth item icon">
-            <span class="benefits-section__item--text"><b>Integrity</b> - We take ownership of our actions and maintain
-              transparency with our customers and colleagues, ensuring lasting, profitable, and trustworthy
-              partnerships.</span>
-          </div>
-        </div>
-      </section>
-      <section class="main__vision-section">
-        <h2 class="title">Our Vision</h2>
-        <div class="vision-section">
-          <div class="vision-section__text-block">
-            <p class="paragraph">Our Vision at FeeX is to lead and support global gambling and managed risk operators by
-              providing efficient solutions and functionality for their day-to-day operations, enabling them to maximize
-              growth potential. We offer a specialized payments platform tailored to the gambling sector, encompassing
-              all channels and connecting to a global network of local payment solutions specific to each market.</p>
-          </div>
-          <div class="vision-section__image-block">
-            <img src="./assets/images/vision.png" alt="vision image" class="vision-section__image-block--image">
-            <img src="./assets/images/vision2-mobile.png" alt="vision image"
-              class="vision-section__image-block--image-mobile">
-          </div>
-        </div>
-        <div class="vision-section">
-          <div class="vision-section__text-block">
-            <p class="paragraph">With Feex, operators gain the capability to integrate new customer payment methods and
-              third-party service providers seamlessly. Our platform allows defining and implementing rules and
-              workflows for efficient utilization, setting up real-time customer communications, and monitoring the
-              entire system to ensure optimal performance. Rest assured, we maintain full compliance with PCI DSS Level
-              1 (soon).</p>
-          </div>
-          <div class="vision-section__image-block">
-            <img src="./assets/images/vision2.png" alt="vision image" class="vision-section__image-block--image">
-          </div>
-        </div>
-      </section>
-      <section class="main__choose-section choose-section">
-        <h2 class="title">Why Choose Feex</h2>
-        <p class="paragraph choose-section__paragraph">Choosing Feex means choosing a reliable partner that understands
-          the complexities of
-          international commerce. Our dedication to security, speed, and efficiency allows businesses to focus on
-          growth, confident that their payment processes are in safe hands.</p>
-      </section>
-    </main>
+        </section>
+        <section class="main__choose-section choose-section">
+          <h2 class="title">Why Choose Feex</h2>
+          <p class="paragraph choose-section__paragraph">
+            Choosing Feex means choosing a reliable partner that understands the
+            complexities of international commerce. Our dedication to security,
+            speed, and efficiency allows businesses to focus on growth,
+            confident that their payment processes are in safe hands.
+          </p>
+        </section>
+      </main>
+    </div>
+    <footer class="layout__footer">
+      <div class="footer">
+        <img src="./assets/images/logo.png" alt="FeexIt" class="header__logo" />
 
-  </div>
-  <footer class="layout__footer">
-    <div class="footer">
-      <img src="./assets/images/logo.png" alt="FeexIt" class="header__logo">
-
-      <nav class="footer__navigation navigation-footer">
-        <ul class="navigation-footer__list">
-          <li class="navigation-footer__item"><a href="#about" class="navigation__item--link">About Us</a></li>
-          <!-- <li class="navigation-footer__item"><a href="#" class="navigation__item--link">Our Solutions</a></li>
+        <nav class="footer__navigation navigation-footer">
+          <ul class="navigation-footer__list">
+            <!-- <li class="navigation-footer__item"><a href="#about" class="navigation__item--link">About Us</a></li> -->
+            <!-- <li class="navigation-footer__item"><a href="#" class="navigation__item--link">Our Solutions</a></li>
           <li class="navigation-footer__item"><a href="#" class="navigation__item--link">Our Documentation</a></li> -->
-        </ul>
-      </nav>
-      <div class="footer__controls controls">
-        <!-- <button type="button" class="controls__login"><span class="controls__login--text">Log
+          </ul>
+        </nav>
+        <div class="footer__controls controls">
+          <!-- <button type="button" class="controls__login"><span class="controls__login--text">Log
             In</span>
           <img class="controls__login--icon" src="./assets/svg/login.svg" alt=login icon""></button> -->
-        <button type="button" id="contactButton2" class="controls__contact"><span
-            class="controls__contact--text">Contact US</span>
-          <img class="controls__contact--icon" src="./assets/svg/contact.svg" alt="contact icon"></button>
+          <button type="button" id="contactButton2" class="controls__contact">
+            <span class="controls__contact--text">Contact US</span>
+            <img
+              class="controls__contact--icon"
+              src="./assets/svg/contact.svg"
+              alt="contact icon"
+            />
+          </button>
+        </div>
+      </div>
+    </footer>
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal-content" id="modalContent">
+        <h2 class="title modal-content__title">Do you have any questions?</h2>
+        <form action="" class="modal-content__form form">
+          <div class="form__group">
+            <label class="form__group--label" for="firstName"
+              >First Name:</label
+            >
+            <input
+              class="form__group--input"
+              type="text"
+              id="firstName"
+              name="firstName"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__group--label" for="lastName">Last Name:</label>
+            <input
+              class="form__group--input"
+              type="text"
+              id="lastName"
+              name="lastName"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__group--label" for="email">Email:</label>
+            <input
+              class="form__group--input"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+          <div class="form__group">
+            <label class="form__group--label" for="text">Text:</label>
+            <textarea
+              class="form__group--input"
+              id="text"
+              name="text"
+              rows="1"
+              required
+            ></textarea>
+          </div>
+          <button class="form__button" type="submit">Send</button>
+        </form>
       </div>
     </div>
-  </footer>
-  <div class="modal-overlay" id="modalOverlay">
-    <div class="modal-content" id="modalContent">
-      <h2 class="title modal-content__title">Do you have any questions?</h2>
-      <form action="" class="modal-content__form form">
-        <div class="form__group">
-          <label class="form__group--label" for="firstName">First Name:</label>
-          <input class="form__group--input" type="text" id="firstName" name="firstName" required>
-        </div>
-        <div class="form__group">
-          <label class="form__group--label" for="lastName">Last Name:</label>
-          <input class="form__group--input" type="text" id="lastName" name="lastName" required>
-        </div>
-        <div class="form__group">
-          <label class="form__group--label" for="email">Email:</label>
-          <input class="form__group--input" type="email" id="email" name="email" required>
-        </div>
-        <div class="form__group">
-          <label class="form__group--label" for="text">Text:</label>
-          <textarea class="form__group--input" id="text" name="text" rows="1" required></textarea>
-        </div>
-        <button class="form__button" type="submit">Send</button>
-      </form>
-    </div>
-  </div>
-</body>
-
+  </body>
 </html>
