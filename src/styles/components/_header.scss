@@ -4,6 +4,13 @@
   align-items: center;
   justify-content: space-between;
   gap: 30px;
+  padding: 0 28px;
+  @include laptop {
+    padding: 0 24px;
+  }
+  @include tablet {
+    padding: 0 18px;
+  }
   @include mobile {
     gap: 10px;
   }
