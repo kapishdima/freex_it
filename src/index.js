@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener('DOMContentLoaded', function () {
   var modalOverlay = document.getElementById('modalOverlay');
   var contactButton = document.getElementById('contactButton');
+  var contactButton2 = document.getElementById('contactButton2');
 
   function openModal() {
     modalOverlay.style.display = 'flex';
@@ -38,4 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   contactButton.addEventListener('click', openModal);
+  contactButton2.addEventListener('click', openModal);
 });
+
