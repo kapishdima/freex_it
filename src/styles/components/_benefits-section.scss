@@ -21,6 +21,9 @@
   @include mobile {
     margin: 0px 0px 60px;
   }
+  &--highlited {
+    font-weight: 600;
+  }
 }
 .benefits-section {
   display: flex;
