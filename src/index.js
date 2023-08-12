@@ -19,14 +19,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //Modal
 
-function openModal() {
+document.addEventListener('DOMContentLoaded', function () {
   var modalOverlay = document.getElementById('modalOverlay');
-  var modalContent = document.getElementById('modalContent');
-  modalOverlay.style.display = 'flex';
-  modalContent.innerHTML = '<p>Здесь можно добавить свой контент для модального окна</p>';
-}
+  var contactButton = document.getElementById('contactButton');
 
-function closeModal() {
-  var modalOverlay = document.getElementById('modalOverlay');
-  modalOverlay.style.display = 'none';
-}
+  function openModal() {
+    modalOverlay.style.display = 'flex';
+  }
+
+  function closeModal() {
+    modalOverlay.style.display = 'none';
+  }
+
+  modalOverlay.addEventListener('click', function (event) {
+    if (event.target === modalOverlay) {
+      closeModal();
+    }
+  });
+
+  contactButton.addEventListener('click', openModal);
+});

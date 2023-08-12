@@ -13,10 +13,10 @@
   <meta property="og:description"
     content="Discover advanced payment technology and risk management solutions with Feex, enabling merchants worldwide to access diverse payment options across regions for seamless global transactions.">
   <meta property="og:image" content="./assets/images/about.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="./assets/images/favicon/site.webmanifest">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 </head>
@@ -49,8 +49,8 @@
         <!-- <button type="button" class="controls__login"><span class="controls__login--text">Log
             In</span>
           <img class="controls__login--icon" src="./assets/svg/login.svg" alt=""></button> -->
-        <button type="button" onclick="openModal()" class="controls__contact"><span
-            class="controls__contact--text">Contact US</span>
+        <button type="button" id="contactButton" class="controls__contact"><span class="controls__contact--text">Contact
+            US</span>
           <img class="controls__contact--icon" src="./assets/svg/contact.svg" alt=""></button>
       </div>
     </header>
@@ -241,7 +241,30 @@
       </div>
     </div>
   </footer>
-
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content" id="modalContent">
+      <h2 class="title modal-content__title">Do you have any questions?</h2>
+      <form action="" class="modal-content__form form">
+        <div class="form__group">
+          <label class="form__group--label" for="firstName">First Name:</label>
+          <input class="form__group--input" type="text" id="firstName" name="firstName" required>
+        </div>
+        <div class="form__group">
+          <label class="form__group--label" for="lastName">Last Name:</label>
+          <input class="form__group--input" type="text" id="lastName" name="lastName" required>
+        </div>
+        <div class="form__group">
+          <label class="form__group--label" for="email">Email:</label>
+          <input class="form__group--input" type="email" id="email" name="email" required>
+        </div>
+        <div class="form__group">
+          <label class="form__group--label" for="text">Text:</label>
+          <textarea class="form__group--input" id="text" name="text" rows="1" required></textarea>
+        </div>
+        <button class="form__button" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>
