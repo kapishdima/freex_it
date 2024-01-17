@@ -1,0 +1,104 @@
+.payment-status {
+  max-width: 1440px;
+  width: 100%;
+  height: 1024px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+
+  @include mobile() {
+    justify-content: start;
+    height: 100vh;
+    gap: 45px;
+  }
+
+  &__logo {
+    margin-top: 91px;
+    width: 294px;
+    height: 100px;
+
+    @include mobile() {
+      margin-top: 32px;
+      margin-bottom: 45px;
+      width: 116px;
+      height: 40px;
+    }
+  }
+
+  &__icon {
+    width: 412px;
+    height: 412px;
+
+    @include mobile() {
+      width: 238px;
+      height: 238px;
+    }
+  }
+
+  &__context {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    @include mobile() {
+      gap: 24px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    font-family: $side-ff;
+    font-size: 48px;
+    font-weight: 700;
+
+    @include mobile() {
+      font-size: 22px;
+    }
+    &--success {
+      color: $color-green;
+    }
+    &--fail {
+      color: $color-red;
+    }
+  }
+  &__description {
+    max-width: 1022px;
+
+    text-align: center;
+    font-size: 24px;
+    line-height: 150%;
+    color: $color-black;
+
+    @include mobile() {
+      font-size: 16px;
+    }
+  }
+  &__link {
+    text-decoration: none;
+
+    width: 294px;
+    height: 75px;
+    border-radius: 12px;
+    background-color: $color-purple;
+
+    color: $color-white;
+    font-family: $main-ff;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include mobile() {
+      width: 278px;
+      height: 48px;
+
+      font-size: 18px;
+    }
+  }
+}
